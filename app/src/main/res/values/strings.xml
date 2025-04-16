@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">BLE Devices Scanner</string>
+    
+    <!-- Main Activity -->
+    <string name="no_devices_found">No BLE devices found</string>
+    <string name="scanning">Scanning for BLE devices…</string>
+    <string name="scan_start">Start Scan</string>
+    <string name="scan_stop">Stop Scan</string>
+    
+    <!-- Device Details Activity -->
+    <string name="device_details">Device Details</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="device_name">Device Name</string>
+    <string name="device_address">Device Address</string>
+    <string name="device_rssi">Signal Strength</string>
+    <string name="characteristics">Characteristics</string>
+    <string name="no_characteristics">No characteristics found</string>
+    <string name="characteristic_uuid">UUID</string>
+    <string name="characteristic_value">Value</string>
+    <string name="characteristic_properties">Properties</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="connecting">Connecting…</string>
+    
+    <!-- Permissions -->
+    <string name="permission_rationale">Location permission is required for BLE scanning on Android 6.0 and above</string>
+    <string name="bluetooth_not_supported">Bluetooth LE is not supported on this device</string>
+    <string name="bluetooth_disabled">Bluetooth is disabled</string>
+</resources> 
