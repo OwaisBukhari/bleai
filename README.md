@@ -34,20 +34,43 @@ The app requires the following permissions:
 - `BLUETOOTH_CONNECT` - Required for connecting on Android 12+ (API 31+)
 - `ACCESS_FINE_LOCATION` - Required for BLE scanning on Android 6.0+ (API 23+)
 
-## Setup
+## Setup Instructions
 
-1. Clone the repository
+### Building the Project
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/bledevicesscanner.git
+   ```
+   
 2. Open the project in Android Studio
-3. Build and run on a compatible device
 
-## Usage
+3. Run a clean build:
+   ```
+   ./gradlew clean (Linux/Mac)
+   gradlew.bat clean (Windows)
+   ```
 
-1. Launch the app
-2. Grant necessary permissions when prompted
-3. Tap the floating action button to start scanning for BLE devices
-4. Tap on a device to view its details and connect
-5. Once connected, the app will display the device's characteristics
-6. Tap "Read" on readable characteristics to retrieve their values
+4. Build the project:
+   ```
+   ./gradlew build (Linux/Mac)
+   gradlew.bat build (Windows)
+   ```
+
+### Troubleshooting Common Issues
+
+If you encounter `NullPointerException` during D8 dexing:
+
+1. Make sure MultiDex is enabled in app/build.gradle
+2. Verify that ProGuard is properly configured
+3. Ensure all the necessary dependencies are included
+
+### Debugging
+
+When debugging Bluetooth functionality:
+1. Enable Developer Options on your Android device
+2. In Developer Options, enable "Bluetooth HCI snoop log"
+3. Use a Bluetooth packet analyzer to view logs
 
 ## License
 
